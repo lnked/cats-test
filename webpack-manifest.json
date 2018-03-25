@@ -1,8 +1,8 @@
 {
-  "/react-cms/app.js": "/react-cms/js/app.75695.js",
-  "/react-cms/fav/favicon.svg": "/react-cms/fav/manifest.webapp",
-  "/react-cms/images/pattern.png": "/react-cms/images/pattern-d6e90.png",
-  "/react-cms/images/photo.png": "/react-cms/images/photo-75a1d.png",
-  "/react-cms/runtime.js": "/react-cms/js/runtime.d41d8.js",
-  "/react-cms/vendors.js": "/react-cms/js/vendors.6d041.js"
+  "/cats-test/app.js": "/cats-test/js/app.cb7ce.js",
+  "/cats-test/fav/favicon.svg": "/cats-test/fav/manifest.webapp",
+  "/cats-test/images/pattern.png": "/cats-test/images/pattern-d6e90.png",
+  "/cats-test/images/photo.png": "/cats-test/images/photo-75a1d.png",
+  "/cats-test/runtime.js": "/cats-test/js/runtime.d41d8.js",
+  "/cats-test/vendors.js": "/cats-test/js/vendors.6d041.js"
 }
