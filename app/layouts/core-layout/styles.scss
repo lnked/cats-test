@@ -24,20 +24,26 @@ $core-sidebar-width: $aside-width + $sidebar-width;
     }
 }
 
-.answers {
-    padding: 5px 10px;
+.header {
+    z-index: 1000;
+    text-align: center;
     position: absolute;
     left: 50%;
     top: 15px;
+    transform: translateX(-50%);
+}
+
+.button {
+    padding: 5px 10px;
     color: #fff;
     text-align: center;
-    z-index: 1000;
     outline: 0;
     cursor: pointer;
     font-size: 1.5rem;
+    display: inline-block;
     text-decoration: none;
     border: 1px solid $c-red;
-    transform: translateX(-50%);
+    margin: 0 10px;
 }
 
 .active {
