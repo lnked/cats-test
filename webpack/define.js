@@ -6,7 +6,7 @@ const _node_ = resolve(__dirname, '../node_modules');
 const _base_ = resolve(__dirname, '../');
 const _root_ = resolve(__dirname, '../app');
 const _dist_ = resolve(__dirname, '../dist');
-const _deploy_ = '/react-cms/';
+const _deploy_ = '/cats-test/';
 
 const isDeploy  = process.argv.includes('deploy');
 const isAnalyze = process.argv.includes('analyze');

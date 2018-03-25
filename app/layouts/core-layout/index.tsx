@@ -31,7 +31,7 @@ export default class CoreLayout extends React.Component<T, S> {
 
         return (
             <div className={css.layout}>
-                <NavLink to="/about" className={css.answers} activeClassName={css.active}>
+                <NavLink to="/cats-test/about" className={css.answers} activeClassName={css.active}>
                     Ответы на вопросы
                 </NavLink>
 

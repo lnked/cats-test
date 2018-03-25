@@ -13,7 +13,7 @@ export default class About extends React.Component<{}, S> {
 
     componentDidMount () {
         axios
-            .get('/api/answers.json')
+            .get('https://lnked.github.io/cats-test/api/answers.json')
             .then((response) => {
                 if (typeof (response.data) !== 'undefined') {
                     this.setState({ list: response.data })
@@ -26,6 +26,8 @@ export default class About extends React.Component<{}, S> {
 
     render () {
         const { list }: any = this.state
+
+        console.log(list)
 
         /* eslint-disable */
 

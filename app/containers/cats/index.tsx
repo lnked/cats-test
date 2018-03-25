@@ -17,7 +17,7 @@ export default class Cats extends React.Component<{}, S> {
 
     componentDidMount () {
         axios
-            .get('/api/cats.json')
+            .get('https://lnked.github.io/cats-test/api/cats.json')
             .then((response) => {
                 if (typeof (response.data) !== 'undefined') {
                     this.setState({ list: response.data })

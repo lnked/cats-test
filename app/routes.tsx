@@ -2,7 +2,6 @@ import * as React from 'react'
 
 import {
     BrowserRouter as Router,
-    // Redirect,
     Route,
     Switch
 } from 'react-router-dom'
@@ -19,11 +18,11 @@ import {
 
 const routes: any = [
     {
-        path: '/',
         exact: true,
+        path: '/cats-test',
         component: Cats
     }, {
-        path: '/about',
+        path: '/cats-test/about',
         component: About
     }, {
         status: 404,
