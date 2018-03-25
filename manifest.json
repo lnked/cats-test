@@ -16,6 +16,11 @@
       "sizes": "48x48"
     },
     {
+      "src": "fav/android-chrome-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
       "src": "fav/android-chrome-36x36.png",
       "type": "image/png",
       "sizes": "36x36"
@@ -31,11 +36,6 @@
       "sizes": "144x144"
     },
     {
-      "src": "fav/android-chrome-72x72.png",
-      "type": "image/png",
-      "sizes": "72x72"
-    },
-    {
       "src": "fav/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
@@ -46,14 +46,14 @@
       "sizes": "256x256"
     },
     {
-      "src": "fav/android-chrome-384x384.png",
-      "type": "image/png",
-      "sizes": "384x384"
-    },
-    {
       "src": "fav/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "fav/android-chrome-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
     }
   ],
   "prefer_related_applications": false,
