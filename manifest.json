@@ -26,19 +26,9 @@
       "sizes": "36x36"
     },
     {
-      "src": "fav/android-chrome-144x144.png",
-      "type": "image/png",
-      "sizes": "144x144"
-    },
-    {
       "src": "fav/android-chrome-96x96.png",
       "type": "image/png",
       "sizes": "96x96"
-    },
-    {
-      "src": "fav/android-chrome-256x256.png",
-      "type": "image/png",
-      "sizes": "256x256"
     },
     {
       "src": "fav/android-chrome-192x192.png",
@@ -49,6 +39,16 @@
       "src": "fav/android-chrome-384x384.png",
       "type": "image/png",
       "sizes": "384x384"
+    },
+    {
+      "src": "fav/android-chrome-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "fav/android-chrome-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
     },
     {
       "src": "fav/android-chrome-512x512.png",
