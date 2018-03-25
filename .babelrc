@@ -1,0 +1,67 @@
+{
+    "presets": [
+        ["env", {
+            "targets": {
+                "node": "current",
+                "browsers": ["last 2 versions"]
+            },
+            "loose": true,
+            "debug": false,
+            "uglify": true,
+            "modules": false,
+            "useBuiltIns": true
+        }],
+        "react",
+        "stage-2"
+    ],
+    "plugins": [
+        "dual-import",
+        "transform-imports",
+        "transform-react-jsx",
+        ["babel-plugin-styled-components", {
+            "minify": false,
+            "uglifyPure": false
+        }]
+    ],
+    "env": {
+        "test": {
+            "presets": [
+                "env",
+                "react"
+            ],
+            "plugins": [
+                "transform-es2015-modules-commonjs"
+            ]
+        },
+        "development": {
+            "plugins": [
+                "react-hot-loader/babel",
+                "transform-react-display-name"
+            ],
+            "sourceMaps": true
+        },
+        "production": {
+            "presets": [
+                "minify"
+            ],
+            "plugins": [
+                "transform-react-inline-elements",
+                "transform-react-constant-elements",
+                "transform-react-pure-class-to-function",
+                [
+                    "transform-runtime",
+                    {
+                        "helpers": false,
+                        "polyfill": false,
+                        "regenerator": true,
+                        "moduleName": "babel-runtime"
+                    }
+                ]
+            ],
+            "ignore": [
+                "tests",
+                "node_modules"
+            ]
+        }
+    }
+}

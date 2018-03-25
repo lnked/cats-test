@@ -1,0 +1,46 @@
+@import 'assets/styles/_global.scss';
+
+.container {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    padding: 40px 20px;
+}
+
+.title {
+    font-family: $font-exo;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cats {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 320px;
+
+        @media (max-width: 1024px) {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+}

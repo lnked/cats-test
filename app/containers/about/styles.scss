@@ -1,0 +1,71 @@
+@import 'assets/styles/_global.scss';
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    position: relative;
+    z-index: 100;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    font-family: $font-exo;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.qq {
+    clear: both;
+
+    &__node:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        color: #93d151;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    &__remind {
+        color: #696969;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        font-style: italic;
+        padding-left: 15px;
+        border-left: 2px solid #696969;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__answer {
+        color: #cfcfcf;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        font-style: italic;
+        padding-left: 15px;
+        border-left: 2px solid $c-red;
+
+        a {
+            color: $c-blue;
+            text-decoration: underline;
+
+            &:hover {
+                color: $c-blue-hover;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__item {
+        clear: both;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}

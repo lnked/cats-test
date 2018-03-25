@@ -1,0 +1,55 @@
+@import 'assets/styles/_global.scss';
+
+$core-sidebar-width: $aside-width + $sidebar-width;
+
+.layout {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #000 url(images/pattern.png) repeat;
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: fixed 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5) 100%);
+    }
+}
+
+.answers {
+    padding: 5px 10px;
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    color: #fff;
+    text-align: center;
+    z-index: 1000;
+    outline: 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 1px solid $c-red;
+    transform: translateX(-50%);
+}
+
+.active {
+    cursor: default;
+    pointer-events: none;
+    background-color: $c-red;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: calc(100% - #{$header-height});
+}

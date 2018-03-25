@@ -1,0 +1,230 @@
+@import 'assets/styles/_global.scss';
+
+.card {
+    $p: &;
+    width: 320px;
+    height: 480px;
+    position: relative;
+    font-size: 0;
+    padding: 4px;
+
+    &_disabled {
+        user-select: none;
+        pointer-events: none;
+    }
+
+    &__mask {
+        width: 100%;
+        height: 100%;
+        color: $c-blue;
+        position: absolute 0;
+        z-index: 0;
+        transition: color $a-time ease-in-out;
+
+        #{$p + '_disabled'} & {
+            color: $c-disabled;
+        }
+
+        #{$p + '_selected'} & {
+            color: $c-selected;
+        }
+
+        #{$p + '_selected'}:hover & {
+            color: $c-selected-hover;
+        }
+
+        // #{$p}:hover & {
+        //     color: $c-red;
+        // }
+    }
+}
+
+.label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.add_cart {
+    cursor: pointer;
+    color: #1698d9;
+    background: none;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    transition: color $a-micro-time $a-func;
+
+    &:hover {
+        color: $c-selected;
+    }
+}
+
+.manual {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-top: 13px;
+    text-align: center;
+
+    &_disabled {
+        color: #ff6;
+    }
+
+    &_dotted {
+        &:after {
+            content: '.';
+            color: #1698d9;
+        }
+    }
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.content {
+    height: 100%;
+    padding: 20px 47px;
+    position: relative;
+    z-index: 1;
+}
+
+.category {
+    color: #666;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 15px;
+
+    .card_disabled & {
+        color: $c-disabled;
+    }
+}
+
+.name {
+    color: #000;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+
+    .card_disabled & {
+        color: $c-disabled;
+    }
+}
+
+.stuffing {
+    color: #000;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 15px;
+
+    .card_disabled & {
+        color: $c-disabled;
+    }
+}
+
+.weight {
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    z-index: 2;
+    background-color: $c-blue;
+    transition: background-color $a-time linear;
+
+    :hover > & {
+        background-color: $c-blue-hover;
+    }
+
+    .card_disabled & {
+        &,
+        &:hover {
+            background-color: $c-disabled;
+        }
+    }
+
+    .card_selected & {
+        background-color: $c-selected;
+    }
+
+    .card_selected:hover & {
+        background-color: $c-selected-hover;
+    }
+
+    &__center {
+        line-height: .9;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__value {
+        display: block;
+        font-size: 4.2rem;
+    }
+
+    &__unit {
+        display: block;
+        font-size: 2.1rem;
+    }
+}
+
+.portion {
+    margin-bottom: 5px;
+}
+
+.bonus, .portion {
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.14;
+
+    .card_disabled & {
+        color: $c-disabled;
+    }
+
+    &__count {
+        font-weight: 700;
+    }
+}
+
+.image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+    transition: opacity $a-time ease-in-out;
+
+    .card_disabled & {
+        opacity: .5;
+    }
+}

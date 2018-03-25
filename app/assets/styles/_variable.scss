@@ -1,0 +1,62 @@
+/* Sizes */
+$header-height:                 36px;
+$sidebar-width:                 48px;
+
+$aside-width:                   202px;
+$aside-padding:                 0;
+$content-padding:               15px;
+
+/* Adaptive */
+$min-phone:                     320px;
+$min-iphone:                    480px;
+$min-tablet:                    720px;
+$min-desktop:                   1024px;
+$min-medium:                    1375px;
+$min-large:                     1680px;
+
+$max-iphone:                    479px;
+$max-tablet:                    639px;
+$max-desktop:                   1023px;
+$max-medium:                    1374px;
+$max-large:                     1679px;
+
+$layout-width:                  1200px;
+$layout-margin:                 42px;
+
+/* Animation */
+$a-time:                        .3s;
+$a-func:                        linear;
+$a-delay:                       0s;
+$a-micro-time:                  .15s;
+$a-long-time:                   .7s;
+
+$font-base:                     10px;
+$font-family:                   'Trebuchet MS', sans-serif;
+$font-exo:                      'Exo 2', 'Trebuchet MS', sans-serif;
+
+$p-variations-percent:          10%;
+
+/* System */
+$c-normal-color:               rgba(0, 0, 0, .8);
+$c-normal-background:          #e6e6e6;
+
+$c-select-color:                #1697d9;
+$c-select-background:           #fff;
+
+$c-placeholder-color:           #000;
+$c-placeholder-opacity:         .5;
+
+/* Colors */
+$c-input-text:                  #29323d;
+
+$c-blue:                        #1697d9;
+$c-blue-hover:                  #2ea7e6;
+
+$c-selected:                    #d91667;
+$c-selected-hover:              #e52e79;
+
+$c-disabled:                    #b3b3b3;
+
+$c-red:                         #ff564e;
+$c-green:                       #28bc00;
+$c-yellow:                      #ffc000;
